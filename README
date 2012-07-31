@@ -1,5 +1,5 @@
 These packages will provide a tool for CLs calculations.  Use
-cls_analysis.py (see its documentation) for usage.
+cls_analysis.py (see its documentation) to run the code.
 
 Overview of files:
 cls_analysis.py: Runs everything.  Has optional flags for input.
@@ -14,3 +14,7 @@ config_reader.C: Helps the workspace_preparer.C read values from a config
   file that contains physical specifications of the model.
 
 config file: contains declarations of variables such as luminosity, etc.
+
+Other files: The unibin_*****.root files contain sample data that the code
+  will run on.  The config.cfg file is currently set up for this data.
+  The run.sh file shows how the sample data can be run.
