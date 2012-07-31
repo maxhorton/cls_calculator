@@ -242,7 +242,7 @@ void workspace_preparer(char *signal_file_name, char *signal_hist_name_in_file, 
 
   //Observed data is pulled from histogram.
   //TFile *data_file = new TFile(data_file_name);
-  TFile *data_file = new TFile("unibin_data.root");
+  TFile *data_file = new TFile(data_file_name);
   TH2D *data_hist = (TH2D *)data_file->Get(data_hist_name_in_file);
   RooDataHist *pData = new RooDataHist("data", "data", obs, data_hist);
   newworkspace->import(*pData);
